@@ -1,9 +1,9 @@
+/* Reset ================ */
+/* ======================*/
 body {
   font-family: Arial, Helvetica, sans-serif;
   padding:0;
   margin:0;
-  background-color: rgb(132, 90, 36)
- 
 }
 :root {
   --primary: #6c00c8; 
@@ -22,9 +22,9 @@ body {
     -0.1px 5px 4.6px -2.3px hsl(var(--shadow-color) / 0.27),
     -0.2px 10.1px 9.3px -3.1px hsl(var(--shadow-color) / 0.35),
     -0.5px 10.5px 17.1px -3.8px hsl(var(--shadow-color) / 0.35);
-    background-color: antiquewhite;
 }
-
+/* Local fonts ========== */
+/* ======================*/
 @font-face {
   font-family: 'Poppins';
   src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
@@ -52,8 +52,8 @@ body {
   font-display: swap;
 }
 
-
-
+/* Typography ========= */
+/* ===================*/
 html, body, div, span, 
 h1, h2, h3, h4, h5, h6, p, a, b, ul, li,
 form, label, input, button {
@@ -61,11 +61,14 @@ form, label, input, button {
   font-weight: 300;
 }
 
-
+/* Container ========== */
+/* ===================*/
 #root {
   background: #4C008F;
   background: #fff;
-  
+  /*   background: #005C97;  /* fallback for old browsers */
+  /* background: -webkit-linear-gradient(to bottom, #6600b9, #005C97);  Chrome 10-25, Safari 5.1-6 */
+  /* background: linear-gradient(to bottom, #6600b9, #005C97); W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ 
   padding: 1em;
   
 }
@@ -106,7 +109,7 @@ main {
   width: 100%;
   height:auto;
   position: relative;
-
+  /* object-fit: cover; */
   margin: 0 auto;
 }
 .meme__image {
@@ -274,7 +277,6 @@ input.upload {
 .meme__holder {
   display: flex;
   flex-wrap: wrap;
-  position: relative;
 }
 @media screen and (min-width:768px) {
   #root {padding:2em 1em;}
@@ -282,17 +284,10 @@ input.upload {
     flex-wrap: nowrap;
     align-content: flex-start;
     align-items: flex-start;
-    width: 800%;
   }
   form {
     flex-wrap: wrap;
-  
-  }
-  #LoginForm{
-visibility: collapse;
-  }
-   
-  }
+}
   fieldset, 
   form button,
   .meme__uploader .button {
@@ -306,7 +301,6 @@ visibility: collapse;
 .meme__generator,
 .meme__holder {
 	flex-basis: 50%;
-
 }
 .meme__generator {
 	position: relative;
@@ -331,6 +325,6 @@ visibility: collapse;
 	bottom: 0;
 }
 #meme {
-	margin-top: 3em;
+	margin-top: 0.3em;
 }
-
+}

@@ -1,10 +1,18 @@
 import React, {createRef} from 'react'
-import { exportComponentAsJPEG,  } from 'react-component-export-image';
+import { exportComponentAsJPEG } from 'react-component-export-image';
 
 function Meme({imageSrc, inputs}) {
     const componentRef = createRef()
 
-
+//     const params = {
+//       html2CanvasOptions: {
+//           backgroundColor: null,
+//           scrollX: -window.scrollX,
+//           scrollY: -window.scrollY,
+//           windowWidth: document.documentElement.offsetWidth,
+//           windowHeight: document.documentElement.offsetHeight
+//       }
+// };
   
     return (
       <div className="meme__holder">
@@ -18,7 +26,6 @@ function Meme({imageSrc, inputs}) {
                 Save as JPEG
         </button>
         
-       
             </div>
         </div>
     )
