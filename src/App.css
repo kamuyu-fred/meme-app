@@ -140,9 +140,9 @@ main {
   bottom: -0.25em;
 }
 form {
-  display: flex;
+  display: flex-end;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   flex-wrap:wrap;
   gap:10px;
   width: 100%;
@@ -237,7 +237,7 @@ button.meme__reset {
   display: flex;
   justify-content: center;
   gap: 20px;
-  align-items: end;
+  align-items: flex-end;
   flex-wrap: wrap;
   margin: 1.5em auto;
   width: 100%;
